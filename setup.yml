@@ -3,5 +3,6 @@
   sudo: yes
   gather_facts: False
   tasks:
-   - setup:
-       filter: ansible_*
+  - name: full node information by playbook
+    setup:
+      filter: ansible_*
