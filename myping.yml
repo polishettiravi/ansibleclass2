@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: communication to nodes from master
+    ping:
