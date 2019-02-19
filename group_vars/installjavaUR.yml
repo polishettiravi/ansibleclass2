@@ -1,0 +1,13 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: install java on ubuntu
+    apt:
+      name: "{{myjavaubuntu}}"
+      state: present
+  
+  - name: install java on redhat
+    yum:
+      name: "{{myjavaredhat}}"
+      state: present
