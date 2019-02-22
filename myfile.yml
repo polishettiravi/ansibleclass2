@@ -4,5 +4,5 @@
   tasks:
   - name: i want to create file on all nodes
     file:
-      path: /home/ravi/ansibleclass2/ravi.txt
+      path: /home/ravi/ravi.txt
       state: touch
