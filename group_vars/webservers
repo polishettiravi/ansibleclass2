@@ -3,3 +3,5 @@ myredhatnode: httpd
 
 myjavaubuntu: openjdk-6-jre
 myjavaredhat: java-1.6.0-openjdk
+
+mycomname : ravi
