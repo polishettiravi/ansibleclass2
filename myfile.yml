@@ -1,8 +1,5 @@
 ---
-- hosts: webservers
-  become: yes
-  tasks:
-  - name: i want to create file on all nodes
-    file:
-      path: /home/ravi/ravi.txt
-      state: touch
+ - name: i want to create file on all nodes
+   file:
+    path: /home/ravi/ravi.txt
+    state: touch
