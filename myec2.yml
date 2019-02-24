@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible nodes in aws account
+    ec2:
+     key_name: ravipemkey
+     instance_type: t2.micro
+     image: ami-0bbd286142cc2fcbe
+     wait: yes
+     region: ap-southeast-1b
+     group: tomcat
+     count: 3
+     vpc_subnet_id: subnet-9f393bf8
+     assign_public_ip: yes
+     assign_instance_tags:
+       name: myansiblenodes

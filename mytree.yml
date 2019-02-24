@@ -1,0 +1,8 @@
+---
+- hosts: tag_Name_ansible_node1_ubuntu14
+  become: yes
+  tasks:
+  - name: install tree
+    apt:
+      name: tree
+      state: present
