@@ -27,6 +27,6 @@
 
 - name: i want to deploy ravi java war file into webapps
   get_url:
-    url: http://18.136.105.252:8081/artifactory/vtvcsit/
-    dest: /usr/share/tomcat/webapps/raviLogin.war
+    url: http://3.0.54.13:8081/artifactory/vtvcsit/
+    dest: /usr/share/tomcat/webapps/
     force_basic_auth: yes
