@@ -27,6 +27,6 @@
 
 - name: i want to deploy ravi java war file into webapps
   get_url:
-    url: http://13.229.207.217:8081/artifactory/ansiblejfrog/50/target/raviLogin-1.0.war
+    url: 
     dest: /usr/share/tomcat/webapps/
     force_basic_auth: yes
